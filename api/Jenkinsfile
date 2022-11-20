@@ -7,7 +7,7 @@ pipeline {
             steps {
                 sh 'echo "[valle] Running Jenkins build"'
                 // sh 'deno --version'
-                sh 'node --version'
+                // sh 'node --version'
             }
         }
     }
