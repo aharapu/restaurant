@@ -6,7 +6,7 @@
         ],
         "strict": true
     },
-    "importMap": "import_map.json",
+    "importMap": "deno_import_map.json",
     "lint": {
         "files": {
             "include": [
