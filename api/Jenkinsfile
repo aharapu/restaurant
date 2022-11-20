@@ -1,11 +1,13 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent { docker { image 'denoland/deno:1.10.3' } }
+    // agent { docker { image 'denoland/deno:1.10.3' } }
+    agent { docker { image 'node:16.17.1-alpine' } }
     stages {
         stage('build') {
             steps {
                 sh 'echo "[valle] Running Jenkins build"'
-                sh 'deno --version'
+                // sh 'deno --version'
+                sh 'node --version'
             }
         }
     }
